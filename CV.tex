@@ -1,0 +1,292 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SIMPLE-RESUME-CV
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% INSTRUCTIONS FOR COMPILING THIS DOCUMENT ("CV.tex")
+%% TeX ---(XeLaTeX)---> PDF:
+%%
+%% Method 1: Use latexmk for fully automated document generation:
+%%   latexmk -xelatex "CV.tex"
+%%   (add the -pvc switch to automatically recompile on changes)
+%%
+%% Method 2: Use XeLaTeX directly:
+%%   xelatex "CV.tex"
+%%   (run multiple times to resolve cross-references if needed)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \documentclass[a4paper,10pt,oneside]{article}
+\documentclass[letterpaper,10pt,oneside]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TYPESETTING OPTIONS.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\TypesetInNonStopMode}{1}
+\newcommand{\TypesetInDraftMode}{0}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{CV-Preamble.tex}
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Prasang Sharma}
+\newcommand{\CVTitle}{Prasang Sharma's CV}
+\newcommand{\CVNote}{CV compiled on {\today} for MITACS}
+\newcommand{\CVWebpage}{https://prasang7.github.io/}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+pdfpagemode={},
+bookmarks=true,
+unicode=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\title{\CVAuthor}
+
+\begin{subtitle}
+
+\href{http://vit.ac.in/}
+{VIT University, Chennai, India}
+
+\par
+\href{\CVWebpage}{Website}
+\,\SubBulletSymbol
+\,\href{https://github.com/prasang7}{Github}
+\,\SubBulletSymbol
+\,\href{https://in.linkedin.com/in/prasang7}{Linkedin}
+\,\SubBulletSymbol
+\,\href{https://www.behance.net/prasang7}{Design Portfolio}
+
+\par
+\href{mailto:prasang.sharma7@gmail.com}
+{prasang.sharma7@gmail.com}
+\,\SubBulletSymbol\,
++91\,86810-70970
+
+\end{subtitle}
+
+\begin{body}
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\section
+{Education}
+{Education}
+{PDF:Education}
+
+\href{http://vit.ac.in/}
+{\textbf{Vellore Institute of Technology}},
+Chennai, Tamil Nadu, India
+\hfill
+{Expected May 2018}
+
+\GapNoBreak
+\BulletItem
+Bachelor of Technology (B.Tech.) in Computer Science
+\begin{detail}
+\SubBulletItem
+Cumulative GPA (after 4 semester): 9.01/10.00
+\SubBulletItem
+Relevant Coursework: OOPS, Data Structures, Algorithm Analysis, DBMS.
+\end{detail}
+
+
+%%%%%%%%%%%%%%%%%%%%%
+%% WORK EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Work Experience}
+{Work Experience}
+{PDF:Work Experience}
+
+%%%% ENGINEER BABU
+\href{https://www.engineerbabu.com/}
+{\textbf{EngineerBabu Inc}},
+Indore, Madhya Pradesh, India
+\hfill
+{Dec 2015 - Jan 2016}
+\GapNoBreak
+\BulletItem
+Software Development Intern
+\begin{detail}
+\SubBulletItem
+Worked on MotorBabu App - vehicle repair \& service booking app. 
+\SubBulletItem
+Collaboratively worked with senior android developers to build the application.
+\SubBulletItem
+Created the currently used login/signup system, and many internal pages/activites of the app.
+\SubBulletItem
+Learned about various API calls and methods in android, to fetch/send data to remote servers.
+\end{detail}
+
+\href{https://www.engineerbabu.com/}
+{\textbf{VIT Online Learning and Open Courseware - VOLOC}}, VIT Chennai
+\hfill
+{April 2016 - Present}
+\GapNoBreak
+\BulletItem
+Lead Android Developer \& Intern
+\begin{detail}
+\SubBulletItem
+VOLOC is an online learning portal providing e-learning with - Videos, Quizzes, and Documentation.
+\SubBulletItem
+Lead a team of 8 android developers to collaboratively build VOLOC's android client.
+\SubBulletItem
+Created base activities/pages of app along with UI/UX and base functionalities.
+\SubBulletItem
+Shifted code to VCS (git/github) for development and collaboration in team, resulted in enhanced output.  
+\end{detail}
+
+
+%%%%%%%%%%%%%%%%%%%%%
+%%     PROJECTS    %%
+%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Projects}
+{Projects}
+{PDF:Projects}
+
+\href{https://play.google.com/store/apps/details?id=com.cambuzz.internetcabin.cambuzzvitcc}
+{\textbf{Cambuzz}}, Open Source Networking Platform
+\hfill
+{Aug 2015 - Oct 2015}
+\GapNoBreak
+\BulletItem
+Lead App Developer, Team of 9 students (Webapp \& Android)
+\begin{detail}
+\SubBulletItem
+Project Description: Centralized information system, with track teacher feature and in campus Q/A forum.
+\SubBulletItem
+Tech: API calls (Volley), SQLite services, Push Notification system, Material Design.   
+\SubBulletItem
+Created cambuzz-live-feed to bring all the news about our campus on cambuzz android client.
+\SubBulletItem
+Successfully used by 1600+ students.
+\end{detail}
+
+\Gap
+\href{https://play.google.com/store/apps/details?id=com.dert}
+{\textbf{DERT}}, Doctor's Emergency Rescue Task App
+\hfill
+{Jun 2016 - Present}
+\GapNoBreak
+\BulletItem
+Co-founder and Android Developer
+\begin{detail}
+\SubBulletItem
+Project Description: Cross-platform mobile application - Solves social issue by providing safety to doctors.
+\SubBulletItem
+Tech: Multi-Threading, Runtime Permissions, API calls (Volley), Google Cloud Messaging - Push Notifications.   
+\SubBulletItem
+Created DERT's android client, along with designing UI/UX of both iOS and Android app.
+\SubBulletItem
+Accepted by Indian Medical Association and used by 140+ doctors in Dehradun.
+\end{detail}
+
+\Gap
+\href{https://play.google.com/store/apps/details?id=com.iotaconcepts.aurum&hl=en}
+{\textbf{Aurum}}, Healthcare Application - targeting rural India
+\hfill
+{Nov 2015}
+\GapNoBreak
+\BulletItem
+Android Dev and Design Lead
+\begin{detail}
+\SubBulletItem
+Project Description: Healthcare assistance app: tracks diseases, and displays nearby health centers. 
+\SubBulletItem
+Tech: AsyncTasks, Google Maps API, Custom disease mapping algorithm, Material Design.
+\SubBulletItem
+Created login/signup system, along with the UI/UX of the app, and integrated Maps API.
+\SubBulletItem
+National Finalist - IBM-RTBI Hackathon, IIT Madras. 
+\end{detail}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTIVITIES AND AWARDS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Awards and\hfill \break Activities}
+{Activities and Awards}
+{PDF:Activities and Awards}
+
+\BulletItem
+World Finalist (Top 10), World UX Championship (World Usability Congress 2016) 
+\BulletItem
+Winner, Make-a-thon (App Development Hackathon), VIT Chennai, 2015.
+\BulletItem
+Winner, DESIGNation'15 (Graphic Design Competition), VIT Chennai, 2015.
+\BulletItem
+Active Member - Android Club, VIT Chennai. Organiser of app based treasure hunt event.
+\BulletItem
+Academic Excellence Award, VIT Chennai, 2015.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SKILLS AND INTERESTS  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Skills and\hfill \break Interests}
+{Skills and Interests}
+{PDF:Skills and Interests}
+
+\BulletItem
+Language: English (Fluent), Hindi (Native) and Spanish (Elementary Proficiency) 
+\BulletItem
+Technical: Android Application Development, Java, C, C++, C\#, WebDev Languages (HTML, CSS), {\LaTeX}, Adobe Photoshop. Currently working on Ubuntu Gnome for Development.   
+\BulletItem
+Interest: Application Development, Product Design, Machine Learning.
+
+\end{body}
+
+%%%%%%%%%%%
+% CV NOTE %
+%%%%%%%%%%%
+
+\begin{flushright}
+\UseNoteFont%
+%%[\textit{\CVNote}]%
+%%\hspace{2.0mm}\null
+\end{flushright}
+
+\label{LastPage}~
+\end{document}
